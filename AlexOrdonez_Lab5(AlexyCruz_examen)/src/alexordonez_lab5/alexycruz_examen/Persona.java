@@ -5,10 +5,14 @@
  */
 package alexordonez_lab5.alexycruz_examen;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Alex Ordonez
  */
 public class Persona {
-    
+    private String nombre,sexo,Estado_c;
+    private int ID;
+    private ArrayList<String>mensajes=new ArrayList();
 }
