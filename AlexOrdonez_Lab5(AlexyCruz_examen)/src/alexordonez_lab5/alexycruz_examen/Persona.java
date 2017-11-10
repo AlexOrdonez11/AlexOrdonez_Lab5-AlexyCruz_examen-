@@ -13,19 +13,22 @@ import java.util.ArrayList;
  */
 public class Persona {
     private String nombre,sexo,Estado_c,contrasena;
-    private int ID;
+    private int ID,edad;
     private ArrayList<String>mensajes=new ArrayList();
 
     public Persona() {
     }
 
-    public Persona(String nombre, String sexo, String Estado_c, String contrasena, int ID) {
+    public Persona(String nombre, String sexo, String Estado_c, String contrasena, int ID, int edad) {
         this.nombre = nombre;
         this.sexo = sexo;
         this.Estado_c = Estado_c;
         this.contrasena = contrasena;
         this.ID = ID;
+        this.edad = edad;
     }
+
+    
 
     public String getContrasena() {
         return contrasena;
