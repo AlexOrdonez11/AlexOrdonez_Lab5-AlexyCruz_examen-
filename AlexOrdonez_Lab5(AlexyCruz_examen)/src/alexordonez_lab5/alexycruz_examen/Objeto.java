@@ -76,5 +76,10 @@ public class Objeto {
     public void setDueno(Persona dueno) {
         this.dueno = dueno;
     }
+
+    @Override
+    public String toString() {
+        return "Objeto{" + "c=" + c + ", descrip=" + descrip + ", marca=" + marca + ", tamano=" + tamano + ", calidad=" + calidad + ", dueno=" + dueno + '}';
+    }
     
 }

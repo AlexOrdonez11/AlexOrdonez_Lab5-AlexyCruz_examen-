@@ -12,19 +12,30 @@ import java.util.ArrayList;
  * @author Alex Ordonez
  */
 public class Persona {
-    private String nombre,sexo,Estado_c;
+    private String nombre,sexo,Estado_c,contrasena;
     private int ID;
     private ArrayList<String>mensajes=new ArrayList();
 
     public Persona() {
     }
 
-    public Persona(String nombre, String sexo, String Estado_c, int ID) {
+    public Persona(String nombre, String sexo, String Estado_c, String contrasena, int ID) {
         this.nombre = nombre;
         this.sexo = sexo;
         this.Estado_c = Estado_c;
+        this.contrasena = contrasena;
         this.ID = ID;
     }
+
+    public String getContrasena() {
+        return contrasena;
+    }
+
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
+    }
+
+    
 
     public String getNombre() {
         return nombre;
@@ -68,7 +79,9 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "nombre=" + nombre + ", sexo=" + sexo + ", Estado_c=" + Estado_c + ", ID=" + ID + ", mensajes=" + mensajes + '}';
+        return "Persona{" + "nombre=" + nombre + ", sexo=" + sexo + ", Estado_c=" + Estado_c + ", contrasena=" + contrasena + ", ID=" + ID + ", mensajes=" + mensajes + '}';
     }
+
+    
     
 }

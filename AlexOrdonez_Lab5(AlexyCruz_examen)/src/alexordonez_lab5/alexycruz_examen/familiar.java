@@ -12,15 +12,15 @@ import java.util.ArrayList;
  * @author Alex Ordonez
  */
 public class familiar extends Persona{
-    private String rol,trabajo;
-    private int peso,altura;
+    private String trabajo;
+    private int peso,altura,rol;
     private ArrayList objetos=new ArrayList();
 
     public familiar() {
         super();
     }
 
-    public familiar(String rol, String trabajo, int peso, int altura, String nombre, String sexo, String Estado_c, int ID) {
+    public familiar(int rol, String trabajo, int peso, int altura, String nombre, String sexo, String Estado_c, int ID) {
         super(nombre, sexo, Estado_c, ID);
         this.rol = rol;
         this.trabajo = trabajo;
@@ -28,11 +28,11 @@ public class familiar extends Persona{
         this.altura = altura;
     }
 
-    public String getRol() {
+    public int getRol() {
         return rol;
     }
 
-    public void setRol(String rol) {
+    public void setRol(int rol) {
         this.rol = rol;
     }
 
