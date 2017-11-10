@@ -34,29 +34,6 @@ public class menu extends javax.swing.JFrame {
 
         menu = new javax.swing.JFrame();
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        jPanel1 = new javax.swing.JPanel();
-        j_id_fama = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        j_nom_fama = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        j_trab_fama = new javax.swing.JTextField();
-        j_rol_fama = new javax.swing.JComboBox<>();
-        j_alt_fama = new javax.swing.JTextField();
-        j_peso_fama = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jLabel16 = new javax.swing.JLabel();
-        radiosexo_fama = new javax.swing.JRadioButton();
-        radiosex_fama = new javax.swing.JRadioButton();
-        jLabel21 = new javax.swing.JLabel();
-        j_eda_fama = new javax.swing.JTextField();
-        jLabel26 = new javax.swing.JLabel();
-        j_est_fama = new javax.swing.JTextField();
-        j_contra_fama = new javax.swing.JPasswordField();
         jPanel3 = new javax.swing.JPanel();
         jTabbedPane2 = new javax.swing.JTabbedPane();
         jPanel5 = new javax.swing.JPanel();
@@ -85,26 +62,26 @@ public class menu extends javax.swing.JFrame {
         jLabel51 = new javax.swing.JLabel();
         j_fam_mod = new javax.swing.JComboBox<>();
         jPanel6 = new javax.swing.JPanel();
-        jTextField30 = new javax.swing.JTextField();
+        j_id_perm = new javax.swing.JTextField();
         jLabel38 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
         jLabel40 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
-        jTextField31 = new javax.swing.JTextField();
-        jTextField32 = new javax.swing.JTextField();
-        jTextField33 = new javax.swing.JTextField();
+        j_contra_perm = new javax.swing.JTextField();
+        j_nom_perm = new javax.swing.JTextField();
+        j_ocp_perm = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
         jLabel45 = new javax.swing.JLabel();
-        radiosexo3 = new javax.swing.JRadioButton();
-        radiosex3 = new javax.swing.JRadioButton();
+        radiosexo_perm = new javax.swing.JRadioButton();
+        radiosex_perm = new javax.swing.JRadioButton();
         jLabel46 = new javax.swing.JLabel();
-        jTextField37 = new javax.swing.JTextField();
+        j_eda_perm = new javax.swing.JTextField();
         jLabel47 = new javax.swing.JLabel();
-        jTextField38 = new javax.swing.JTextField();
+        j_hor_perm = new javax.swing.JTextField();
         jLabel48 = new javax.swing.JLabel();
-        jTextField39 = new javax.swing.JTextField();
+        j_sue_perm = new javax.swing.JTextField();
         jLabel49 = new javax.swing.JLabel();
-        jTextField40 = new javax.swing.JTextField();
+        j_est_perm = new javax.swing.JTextField();
         j_per_mod = new javax.swing.JComboBox<>();
         jLabel50 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
@@ -114,6 +91,33 @@ public class menu extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jButton5 = new javax.swing.JButton();
+        jPanel7 = new javax.swing.JPanel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        agregar = new javax.swing.JPanel();
+        jTabbedPane3 = new javax.swing.JTabbedPane();
+        jPanel1 = new javax.swing.JPanel();
+        j_id_fama = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        j_nom_fama = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        j_trab_fama = new javax.swing.JTextField();
+        j_rol_fama = new javax.swing.JComboBox<>();
+        j_alt_fama = new javax.swing.JTextField();
+        j_peso_fama = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jLabel16 = new javax.swing.JLabel();
+        radiosexo_fama = new javax.swing.JRadioButton();
+        radiosex_fama = new javax.swing.JRadioButton();
+        jLabel21 = new javax.swing.JLabel();
+        j_eda_fama = new javax.swing.JTextField();
+        jLabel26 = new javax.swing.JLabel();
+        j_est_fama = new javax.swing.JTextField();
+        j_contra_fama = new javax.swing.JPasswordField();
         jPanel2 = new javax.swing.JPanel();
         j_id_pera = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
@@ -135,8 +139,12 @@ public class menu extends javax.swing.JFrame {
         j_sue_pera = new javax.swing.JTextField();
         jLabel25 = new javax.swing.JLabel();
         j_est_pera = new javax.swing.JTextField();
-        jPanel7 = new javax.swing.JPanel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jPanel8 = new javax.swing.JPanel();
+        jPanel9 = new javax.swing.JPanel();
+        jTabbedPane4 = new javax.swing.JTabbedPane();
+        jPanel10 = new javax.swing.JPanel();
+        jPanel11 = new javax.swing.JPanel();
+        jPanel12 = new javax.swing.JPanel();
         per_actual = new javax.swing.JLabel();
         buttonGroup1 = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
@@ -146,6 +154,305 @@ public class menu extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         b_ingresar = new javax.swing.JButton();
         jp_pass = new javax.swing.JPasswordField();
+
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        j_id_famm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                j_id_fammActionPerformed(evt);
+            }
+        });
+        jPanel5.add(j_id_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 44, 91, -1));
+
+        jLabel27.setText("Id");
+        jPanel5.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 47, -1, -1));
+
+        jLabel28.setText("contrasena");
+        jPanel5.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 99, -1, -1));
+
+        jLabel29.setText("nombre");
+        jPanel5.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 159, -1, -1));
+
+        jLabel30.setText("Trabajo");
+        jPanel5.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, -1, -1));
+
+        jLabel31.setText("rol");
+        jPanel5.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, -1, -1));
+
+        j_contra_famm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                j_contra_fammActionPerformed(evt);
+            }
+        });
+        jPanel5.add(j_contra_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 96, 87, -1));
+        jPanel5.add(j_nom_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 156, 87, -1));
+
+        jLabel33.setText("altura cm");
+        jPanel5.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 47, -1, -1));
+
+        jLabel34.setText("peso lbs");
+        jPanel5.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 99, -1, -1));
+
+        j_trab_famm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                j_trab_fammActionPerformed(evt);
+            }
+        });
+        jPanel5.add(j_trab_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 87, -1));
+
+        j_rol_famm.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Madre", "Padre", "Hermano", "Hermana", "Esposo" }));
+        jPanel5.add(j_rol_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, -1, -1));
+        jPanel5.add(j_alt_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(334, 44, 83, -1));
+        jPanel5.add(j_peso_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 96, 84, -1));
+
+        jButton3.setText("Modificar");
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, 142, 56));
+
+        jLabel35.setText("sexo");
+        jPanel5.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 151, -1, -1));
+
+        buttonGroup1.add(radiosexo_famm);
+        radiosexo_famm.setText("M");
+        jPanel5.add(radiosexo_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 147, -1, -1));
+
+        buttonGroup1.add(radiosex_famm);
+        radiosex_famm.setText("F");
+        jPanel5.add(radiosex_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 147, -1, -1));
+
+        jLabel36.setText("edad");
+        jPanel5.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 250, -1, -1));
+        jPanel5.add(j_eda_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 240, 84, -1));
+
+        jLabel37.setText("estado civil");
+        jPanel5.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 200, -1, -1));
+        jPanel5.add(j_est_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 200, 84, -1));
+
+        jLabel51.setText("persona");
+        jPanel5.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 16, -1, -1));
+
+        j_fam_mod.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                j_fam_modItemStateChanged(evt);
+            }
+        });
+        j_fam_mod.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                j_fam_modActionPerformed(evt);
+            }
+        });
+        jPanel5.add(j_fam_mod, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 13, 91, -1));
+
+        jTabbedPane2.addTab("familiar", jPanel5);
+
+        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        j_id_perm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                j_id_permActionPerformed(evt);
+            }
+        });
+        jPanel6.add(j_id_perm, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 58, 91, -1));
+
+        jLabel38.setText("Id");
+        jPanel6.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 61, -1, -1));
+
+        jLabel39.setText("contrasena");
+        jPanel6.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 98, -1, -1));
+
+        jLabel40.setText("nombre");
+        jPanel6.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 148, -1, -1));
+
+        jLabel41.setText("Ocupacion");
+        jPanel6.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 194, -1, -1));
+
+        j_contra_perm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                j_contra_permActionPerformed(evt);
+            }
+        });
+        jPanel6.add(j_contra_perm, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 98, 87, -1));
+        jPanel6.add(j_nom_perm, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 148, 87, -1));
+
+        j_ocp_perm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                j_ocp_permActionPerformed(evt);
+            }
+        });
+        jPanel6.add(j_ocp_perm, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 191, 87, -1));
+
+        jButton4.setText("Modificar");
+        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton4MouseClicked(evt);
+            }
+        });
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 290, 142, 56));
+
+        jLabel45.setText("sexo");
+        jPanel6.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 72, -1, -1));
+
+        buttonGroup2.add(radiosexo_perm);
+        radiosexo_perm.setText("M");
+        jPanel6.add(radiosexo_perm, new org.netbeans.lib.awtextra.AbsoluteConstraints(337, 68, -1, -1));
+
+        buttonGroup2.add(radiosex_perm);
+        radiosex_perm.setText("F");
+        jPanel6.add(radiosex_perm, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 68, -1, -1));
+
+        jLabel46.setText("edad");
+        jPanel6.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, -1, -1));
+
+        j_eda_perm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                j_eda_permActionPerformed(evt);
+            }
+        });
+        jPanel6.add(j_eda_perm, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 160, 84, -1));
+
+        jLabel47.setText("horario");
+        jPanel6.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 246, -1, -1));
+        jPanel6.add(j_hor_perm, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 243, 87, -1));
+
+        jLabel48.setText("sueldo");
+        jPanel6.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(297, 111, -1, -1));
+
+        j_sue_perm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                j_sue_permActionPerformed(evt);
+            }
+        });
+        jPanel6.add(j_sue_perm, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, 84, -1));
+
+        jLabel49.setText("estado civil");
+        jPanel6.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, -1, -1));
+        jPanel6.add(j_est_perm, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 210, 84, -1));
+
+        j_per_mod.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                j_per_modItemStateChanged(evt);
+            }
+        });
+        j_per_mod.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                j_per_modMouseClicked(evt);
+            }
+        });
+        jPanel6.add(j_per_mod, new org.netbeans.lib.awtextra.AbsoluteConstraints(112, 13, 107, -1));
+
+        jLabel50.setText("persona");
+        jPanel6.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 16, -1, -1));
+
+        jTabbedPane2.addTab("personal", jPanel6);
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane2)
+                .addContainerGap())
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane2)
+                .addContainerGap())
+        );
+
+        jTabbedPane1.addTab("Modificar", jPanel3);
+
+        jLabel52.setText("persona");
+
+        jLabel53.setText("Mensaje");
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        jButton5.setText("Enviar");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel52)
+                        .addGap(18, 18, 18)
+                        .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addComponent(jLabel53)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(219, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton5)
+                .addGap(203, 203, 203))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel52))
+                .addGap(57, 57, 57)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel53)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 98, Short.MAX_VALUE)
+                .addComponent(jButton5)
+                .addGap(65, 65, 65))
+        );
+
+        jTabbedPane1.addTab("Mensajeria", jPanel4);
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(67, 67, 67)
+                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(383, Short.MAX_VALUE))
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(388, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("Listar", jPanel7);
 
         j_id_fama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -255,7 +562,7 @@ public class menu extends javax.swing.JFrame {
                                 .addComponent(jLabel21)
                                 .addGap(45, 45, 45)
                                 .addComponent(j_eda_fama, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(128, Short.MAX_VALUE))
+                .addContainerGap(99, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -303,269 +610,12 @@ public class menu extends javax.swing.JFrame {
                     .addComponent(j_rol_fama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(j_eda_fama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel21))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(33, 33, 33))
         );
 
-        jTabbedPane1.addTab("Agregar familiar", jPanel1);
-
-        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        j_id_famm.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j_id_fammActionPerformed(evt);
-            }
-        });
-        jPanel5.add(j_id_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 44, 91, -1));
-
-        jLabel27.setText("Id");
-        jPanel5.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 47, -1, -1));
-
-        jLabel28.setText("contrasena");
-        jPanel5.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 99, -1, -1));
-
-        jLabel29.setText("nombre");
-        jPanel5.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 159, -1, -1));
-
-        jLabel30.setText("Trabajo");
-        jPanel5.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, -1, -1));
-
-        jLabel31.setText("rol");
-        jPanel5.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, -1, -1));
-
-        j_contra_famm.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j_contra_fammActionPerformed(evt);
-            }
-        });
-        jPanel5.add(j_contra_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 96, 87, -1));
-        jPanel5.add(j_nom_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 156, 87, -1));
-
-        jLabel33.setText("altura cm");
-        jPanel5.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 47, -1, -1));
-
-        jLabel34.setText("peso lbs");
-        jPanel5.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 99, -1, -1));
-
-        j_trab_famm.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j_trab_fammActionPerformed(evt);
-            }
-        });
-        jPanel5.add(j_trab_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 87, -1));
-
-        j_rol_famm.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Madre", "Padre", "Hermano", "Hermana", "Esposo" }));
-        jPanel5.add(j_rol_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, -1, -1));
-        jPanel5.add(j_alt_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(334, 44, 83, -1));
-        jPanel5.add(j_peso_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 96, 84, -1));
-
-        jButton3.setText("Modificar");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel5.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, 142, 56));
-
-        jLabel35.setText("sexo");
-        jPanel5.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 151, -1, -1));
-
-        buttonGroup1.add(radiosexo_famm);
-        radiosexo_famm.setText("M");
-        jPanel5.add(radiosexo_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 147, -1, -1));
-
-        buttonGroup1.add(radiosex_famm);
-        radiosex_famm.setText("F");
-        jPanel5.add(radiosex_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 147, -1, -1));
-
-        jLabel36.setText("edad");
-        jPanel5.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 250, -1, -1));
-        jPanel5.add(j_eda_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 240, 84, -1));
-
-        jLabel37.setText("estado civil");
-        jPanel5.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 200, -1, -1));
-        jPanel5.add(j_est_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 200, 84, -1));
-
-        jLabel51.setText("persona");
-        jPanel5.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 16, -1, -1));
-
-        j_fam_mod.addItemListener(new java.awt.event.ItemListener() {
-            public void itemStateChanged(java.awt.event.ItemEvent evt) {
-                j_fam_modItemStateChanged(evt);
-            }
-        });
-        j_fam_mod.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                j_fam_modActionPerformed(evt);
-            }
-        });
-        jPanel5.add(j_fam_mod, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 13, 91, -1));
-
-        jTabbedPane2.addTab("familiar", jPanel5);
-
-        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jTextField30.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField30ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jTextField30, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 58, 91, -1));
-
-        jLabel38.setText("Id");
-        jPanel6.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 61, -1, -1));
-
-        jLabel39.setText("contrasena");
-        jPanel6.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 98, -1, -1));
-
-        jLabel40.setText("nombre");
-        jPanel6.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 148, -1, -1));
-
-        jLabel41.setText("Ocupacion");
-        jPanel6.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 194, -1, -1));
-
-        jTextField31.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField31ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jTextField31, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 98, 87, -1));
-        jPanel6.add(jTextField32, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 148, 87, -1));
-
-        jTextField33.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField33ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jTextField33, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 191, 87, -1));
-
-        jButton4.setText("Modificar");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 290, 142, 56));
-
-        jLabel45.setText("sexo");
-        jPanel6.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 72, -1, -1));
-
-        buttonGroup2.add(radiosexo3);
-        radiosexo3.setText("M");
-        jPanel6.add(radiosexo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(337, 68, -1, -1));
-
-        buttonGroup2.add(radiosex3);
-        radiosex3.setText("F");
-        jPanel6.add(radiosex3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 68, -1, -1));
-
-        jLabel46.setText("edad");
-        jPanel6.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, -1, -1));
-
-        jTextField37.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField37ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jTextField37, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 160, 84, -1));
-
-        jLabel47.setText("horario");
-        jPanel6.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 246, -1, -1));
-        jPanel6.add(jTextField38, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 243, 87, -1));
-
-        jLabel48.setText("sueldo");
-        jPanel6.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(297, 111, -1, -1));
-
-        jTextField39.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField39ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jTextField39, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, 84, -1));
-
-        jLabel49.setText("estado civil");
-        jPanel6.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, -1, -1));
-        jPanel6.add(jTextField40, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 210, 84, -1));
-        jPanel6.add(j_per_mod, new org.netbeans.lib.awtextra.AbsoluteConstraints(112, 13, 107, -1));
-
-        jLabel50.setText("persona");
-        jPanel6.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 16, -1, -1));
-
-        jTabbedPane2.addTab("personal", jPanel6);
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTabbedPane2)
-                .addContainerGap())
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTabbedPane2)
-                .addContainerGap())
-        );
-
-        jTabbedPane1.addTab("Modificar", jPanel3);
-
-        jLabel52.setText("persona");
-
-        jLabel53.setText("Mensaje");
-
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
-
-        jButton5.setText("Enviar");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel52)
-                        .addGap(18, 18, 18)
-                        .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addComponent(jLabel53)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(219, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton5)
-                .addGap(203, 203, 203))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel52))
-                .addGap(57, 57, 57)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel53)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
-                .addComponent(jButton5)
-                .addGap(65, 65, 65))
-        );
-
-        jTabbedPane1.addTab("Mensajeria", jPanel4);
+        jTabbedPane3.addTab("Agregar familiar", jPanel1);
 
         j_id_pera.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -675,7 +725,7 @@ public class menu extends javax.swing.JFrame {
                                 .addComponent(jLabel25)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(j_est_pera, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addGap(0, 72, Short.MAX_VALUE))
+                .addGap(0, 43, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -723,33 +773,102 @@ public class menu extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel23)
                             .addComponent(j_hor_pera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
         );
 
-        jTabbedPane1.addTab("Agregar personal", jPanel2);
+        jTabbedPane3.addTab("Agregar personal", jPanel2);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(67, 67, 67)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(383, Short.MAX_VALUE))
+        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
+        jPanel8.setLayout(jPanel8Layout);
+        jPanel8Layout.setHorizontalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 530, Short.MAX_VALUE)
         );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(364, Short.MAX_VALUE))
+        jPanel8Layout.setVerticalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 383, Short.MAX_VALUE)
         );
 
-        jTabbedPane1.addTab("Listar", jPanel7);
+        jTabbedPane3.addTab("Objeto", jPanel8);
+
+        javax.swing.GroupLayout agregarLayout = new javax.swing.GroupLayout(agregar);
+        agregar.setLayout(agregarLayout);
+        agregarLayout.setHorizontalGroup(
+            agregarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(agregarLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane3)
+                .addContainerGap())
+        );
+        agregarLayout.setVerticalGroup(
+            agregarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(agregarLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane3)
+                .addContainerGap())
+        );
+
+        jTabbedPane1.addTab("Agregar", agregar);
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 530, Short.MAX_VALUE)
+        );
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 383, Short.MAX_VALUE)
+        );
+
+        jTabbedPane4.addTab("tab1", jPanel10);
+
+        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
+        jPanel11.setLayout(jPanel11Layout);
+        jPanel11Layout.setHorizontalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 530, Short.MAX_VALUE)
+        );
+        jPanel11Layout.setVerticalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 383, Short.MAX_VALUE)
+        );
+
+        jTabbedPane4.addTab("tab2", jPanel11);
+
+        javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
+        jPanel12.setLayout(jPanel12Layout);
+        jPanel12Layout.setHorizontalGroup(
+            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 530, Short.MAX_VALUE)
+        );
+        jPanel12Layout.setVerticalGroup(
+            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 383, Short.MAX_VALUE)
+        );
+
+        jTabbedPane4.addTab("tab3", jPanel12);
+
+        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
+        jPanel9.setLayout(jPanel9Layout);
+        jPanel9Layout.setHorizontalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane4)
+                .addContainerGap())
+        );
+        jPanel9Layout.setVerticalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane4)
+                .addContainerGap())
+        );
+
+        jTabbedPane1.addTab("tab5", jPanel9);
 
         per_actual.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         per_actual.setText("Persona");
@@ -894,29 +1013,29 @@ public class menu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void jTextField30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField30ActionPerformed
+    private void j_id_permActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j_id_permActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField30ActionPerformed
+    }//GEN-LAST:event_j_id_permActionPerformed
 
-    private void jTextField31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField31ActionPerformed
+    private void j_contra_permActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j_contra_permActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField31ActionPerformed
+    }//GEN-LAST:event_j_contra_permActionPerformed
 
-    private void jTextField33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField33ActionPerformed
+    private void j_ocp_permActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j_ocp_permActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField33ActionPerformed
+    }//GEN-LAST:event_j_ocp_permActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jTextField37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField37ActionPerformed
+    private void j_eda_permActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j_eda_permActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField37ActionPerformed
+    }//GEN-LAST:event_j_eda_permActionPerformed
 
-    private void jTextField39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField39ActionPerformed
+    private void j_sue_permActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_j_sue_permActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField39ActionPerformed
+    }//GEN-LAST:event_j_sue_permActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
@@ -926,7 +1045,7 @@ public class menu extends javax.swing.JFrame {
         String nombre = j_nom_fama.getText();
         int id = Integer.parseInt(j_id_fama.getText());
         String contra = j_contra_fama.getText();
-        if (id(contra)) {
+        if (id(id)) {
             String estado = j_est_fama.getText();
             int edad = Integer.parseInt(j_eda_fama.getText());
             String sexo = "";
@@ -1013,7 +1132,7 @@ public class menu extends javax.swing.JFrame {
         String nombre = j_nom_pera.getText();
         int id = Integer.parseInt(j_id_pera.getText());
         String contra = j_contra_pera.getText();
-        if (id(contra)) {
+        if (id(id)) {
             String estado = j_est_pera.getText();
             int edad = Integer.parseInt(j_eda_pera.getText());
             String sexo;
@@ -1028,6 +1147,8 @@ public class menu extends javax.swing.JFrame {
             Persona x=new personal(ocupa, horario, 0, sueldo, nombre, sexo, estado, contra, id,  edad);
             DefaultComboBoxModel modelo = (DefaultComboBoxModel) j_per_mod.getModel();
             modelo.addElement(x);
+            personas.add(x);
+            empleados.add((personal)x);
             j_per_mod.setModel(modelo);
         } else {
             JOptionPane.showMessageDialog(this, "No se pudo agregar");
@@ -1036,10 +1157,149 @@ public class menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2MouseClicked
 
     private void j_fam_modItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_j_fam_modItemStateChanged
-        if(evt.getStateChange()>2){
+        if(evt.getStateChange()>=2){
             familiar x=((familiar)j_fam_mod.getSelectedItem());
+            j_id_famm.setText(""+x.getID());
+            j_contra_famm.setText(x.getContrasena());
+            j_nom_famm.setText(x.getNombre());
+            j_est_famm.setText(x.getEstado_c());
+            if(x.getSexo().equals("M")){
+                radiosexo_famm.setSelected(true);
+            }else{
+                radiosex_famm.setSelected(true);
+            }
+            
+            j_rol_famm.setSelectedItem(x.getRol());
+            j_trab_famm.setText(x.getTrabajo());
+            j_alt_famm.setText(""+x.getAltura());
+            j_peso_famm.setText(""+x.getPeso());
         }
     }//GEN-LAST:event_j_fam_modItemStateChanged
+
+    private void j_per_modMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_j_per_modMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_j_per_modMouseClicked
+
+    private void j_per_modItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_j_per_modItemStateChanged
+        if(evt.getStateChange()>=2){
+            personal x=((personal)j_per_mod.getSelectedItem());
+            j_id_perm.setText(""+x.getID());
+            j_contra_perm.setText(x.getContrasena());
+            j_nom_perm.setText(x.getNombre());
+            j_est_perm.setText(x.getEstado_c());
+            if(x.getSexo().equals("M")){
+                radiosexo_perm.setSelected(true);
+            }else{
+                radiosex_perm.setSelected(true);
+            }
+            j_ocp_perm.setText(x.getOcupacion());
+            j_sue_perm.setText(""+x.getSueldo());
+            j_hor_perm.setText(x.getHorario());
+        }
+    }//GEN-LAST:event_j_per_modItemStateChanged
+
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+        String nombre = j_nom_famm.getText();
+        int id = Integer.parseInt(j_id_famm.getText());
+        String contra = j_contra_famm.getText();
+        if (id(id)) {
+            String estado = j_est_famm.getText();
+            int edad = Integer.parseInt(j_eda_famm.getText());
+            String sexo = "";
+            String trabajo = j_trab_famm.getText();
+            int alt = Integer.parseInt(j_alt_famm.getText());
+            int peso = Integer.parseInt(j_peso_famm.getText());
+            if (radiosexo_famm.isSelected()) {
+                sexo = "M";
+            } else {
+                sexo = "F";
+            }
+            String rol = "";
+            if (j_rol_famm.getSelectedItem().equals("Hermana")) {
+                int o = 0;
+                for (familiar p : familiares) {
+                    if (p.getRol().equals("Hermana")) {
+                        o++;
+                    }
+                }
+                if (o == 4) {
+                    JOptionPane.showMessageDialog(this, "No se pudo modificar");
+                } else {
+                    rol = ((String) j_rol_famm.getSelectedItem());
+                    familiar x = ((familiar)j_fam_mod.getSelectedItem());
+                    x.setContrasena(contra);
+                    x.setEstado_c(estado);
+                    x.setID(id);
+                    x.setNombre(nombre);
+                    x.setSexo(sexo);
+                    x.setAltura(alt);
+                    x.setPeso(peso);
+                    x.setRol(rol);
+                    x.setTrabajo(trabajo);
+                    DefaultComboBoxModel modelo = (DefaultComboBoxModel) j_fam_mod.getModel();
+                    j_fam_mod.setModel(modelo);
+                }
+            } else {
+                boolean u = false;
+                for (familiar p : familiares) {
+                    if (j_rol_famm.getSelectedItem().equals(p.getRol())) {
+                        u = true;
+                    }
+                }
+                if (u == true) {
+                    JOptionPane.showMessageDialog(this, "No se pudo agregar");
+                } else {
+                    rol = ((String) j_rol_famm.getSelectedItem());
+                    familiar x =((familiar)j_rol_famm.getSelectedItem());
+                    x.setContrasena(contra);
+                    x.setEstado_c(estado);
+                    x.setID(id);
+                    x.setNombre(nombre);
+                    x.setSexo(sexo);
+                    x.setAltura(alt);
+                    x.setPeso(peso);
+                    x.setRol(rol);
+                    x.setTrabajo(trabajo);
+                    DefaultComboBoxModel modelo = (DefaultComboBoxModel) j_fam_mod.getModel();
+                    j_fam_mod.setModel(modelo);
+                }
+            }
+        } else {
+            JOptionPane.showMessageDialog(this, "No se pudo modificar");
+        }
+    }//GEN-LAST:event_jButton3MouseClicked
+
+    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+         String nombre = j_nom_pera.getText();
+        int id = Integer.parseInt(j_id_pera.getText());
+        String contra = j_contra_pera.getText();
+        if (id(id)) {
+            String estado = j_est_pera.getText();
+            int edad = Integer.parseInt(j_eda_pera.getText());
+            String sexo;
+            String ocupa = j_ocp_pera.getText();
+            String horario = j_hor_pera.getText();
+            double sueldo = Double.parseDouble(j_sue_pera.getText());
+            if (radiosexo_pera.isSelected()) {
+                sexo = "M";
+            } else {
+                sexo = "F";
+            }
+            personal x=(personal)j_per_mod.getSelectedItem();
+            x.setContrasena(contra);
+            x.setEstado_c(estado);
+            x.setHorario(horario);
+            x.setID(id);
+            x.setNombre(nombre);
+            x.setOcupacion(ocupa);
+            x.setSexo(sexo);
+            x.setSueldo(sueldo);
+            DefaultComboBoxModel modelo = (DefaultComboBoxModel) j_per_mod.getModel();
+            j_per_mod.setModel(modelo);
+        } else {
+            JOptionPane.showMessageDialog(this, "No se pudo agregar");
+        }
+    }//GEN-LAST:event_jButton4MouseClicked
 
     /**
      * @param args the command line arguments
@@ -1077,6 +1337,7 @@ public class menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel agregar;
     private javax.swing.JButton b_ingresar;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
@@ -1133,64 +1394,71 @@ public class menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane2;
+    private javax.swing.JTabbedPane jTabbedPane3;
+    private javax.swing.JTabbedPane jTabbedPane4;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField30;
-    private javax.swing.JTextField jTextField31;
-    private javax.swing.JTextField jTextField32;
-    private javax.swing.JTextField jTextField33;
-    private javax.swing.JTextField jTextField37;
-    private javax.swing.JTextField jTextField38;
-    private javax.swing.JTextField jTextField39;
-    private javax.swing.JTextField jTextField40;
     private javax.swing.JTextField j_alt_fama;
     private javax.swing.JTextField j_alt_famm;
     private javax.swing.JPasswordField j_contra_fama;
     private javax.swing.JTextField j_contra_famm;
     private javax.swing.JTextField j_contra_pera;
+    private javax.swing.JTextField j_contra_perm;
     private javax.swing.JTextField j_eda_fama;
     private javax.swing.JTextField j_eda_famm;
     private javax.swing.JTextField j_eda_pera;
+    private javax.swing.JTextField j_eda_perm;
     private javax.swing.JTextField j_est_fama;
     private javax.swing.JTextField j_est_famm;
     private javax.swing.JTextField j_est_pera;
+    private javax.swing.JTextField j_est_perm;
     private javax.swing.JComboBox<String> j_fam_mod;
     private javax.swing.JTextField j_hor_pera;
+    private javax.swing.JTextField j_hor_perm;
     private javax.swing.JTextField j_id_fama;
     private javax.swing.JTextField j_id_famm;
     private javax.swing.JTextField j_id_pera;
+    private javax.swing.JTextField j_id_perm;
     private javax.swing.JTextField j_nom_fama;
     private javax.swing.JTextField j_nom_famm;
     private javax.swing.JTextField j_nom_pera;
+    private javax.swing.JTextField j_nom_perm;
     private javax.swing.JTextField j_ocp_pera;
+    private javax.swing.JTextField j_ocp_perm;
     private javax.swing.JComboBox<String> j_per_mod;
     private javax.swing.JTextField j_peso_fama;
     private javax.swing.JTextField j_peso_famm;
     private javax.swing.JComboBox<String> j_rol_fama;
     private javax.swing.JComboBox<String> j_rol_famm;
     private javax.swing.JTextField j_sue_pera;
+    private javax.swing.JTextField j_sue_perm;
     private javax.swing.JTextField j_trab_fama;
     private javax.swing.JTextField j_trab_famm;
     private javax.swing.JPasswordField jp_pass;
     private javax.swing.JTextField jt_id;
     private javax.swing.JFrame menu;
     private javax.swing.JLabel per_actual;
-    private javax.swing.JRadioButton radiosex3;
     private javax.swing.JRadioButton radiosex_fama;
     private javax.swing.JRadioButton radiosex_famm;
     private javax.swing.JRadioButton radiosex_pera;
-    private javax.swing.JRadioButton radiosexo3;
+    private javax.swing.JRadioButton radiosex_perm;
     private javax.swing.JRadioButton radiosexo_fama;
     private javax.swing.JRadioButton radiosexo_famm;
     private javax.swing.JRadioButton radiosexo_pera;
+    private javax.swing.JRadioButton radiosexo_perm;
     // End of variables declaration//GEN-END:variables
     familiar kim = new familiar("actriz", 130, 180, "admi", "kim", "F", "Casada", "kardashian", 123456, 24);
     Persona actual;
@@ -1199,10 +1467,10 @@ public class menu extends javax.swing.JFrame {
     ArrayList<personal> empleados = new ArrayList();
     int flag;
 
-    public boolean id(String g) {
+    public boolean id(int g) {
         boolean l = true;
         for (Persona p : personas) {
-            if (p.getContrasena().equals(g)) {
+            if (p.getID()==g) {
                 l = false;
             }
         }
