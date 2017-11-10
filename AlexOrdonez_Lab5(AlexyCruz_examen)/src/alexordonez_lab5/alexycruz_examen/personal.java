@@ -13,13 +13,13 @@ import java.util.Date;
  */
 public class personal extends Persona{
     private String ocupacion,horario;
-    private Date tiempotrab;
+    private int tiempotrab;
     private double sueldo;
     public personal() {
         super();
     }
 
-    public personal(String ocupacion, String horario, Date tiempotrab, double sueldo, String nombre, String sexo, String Estado_c, String contrasena, int ID, int edad) {
+    public personal(String ocupacion, String horario, int tiempotrab, double sueldo, String nombre, String sexo, String Estado_c, String contrasena, int ID, int edad) {
         super(nombre, sexo, Estado_c, contrasena, ID, edad);
         this.ocupacion = ocupacion;
         this.horario = horario;
@@ -47,11 +47,11 @@ public class personal extends Persona{
         this.horario = horario;
     }
 
-    public Date getTiempotrab() {
+    public int getTiempotrab() {
         return tiempotrab;
     }
 
-    public void setTiempotrab(Date tiempotrab) {
+    public void setTiempotrab(int tiempotrab) {
         this.tiempotrab = tiempotrab;
     }
 
