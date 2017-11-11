@@ -1131,6 +1131,11 @@ public class menu extends javax.swing.JFrame {
         j_el_persona.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jButton7.setText("Eliminar");
+        jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton7MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -1429,7 +1434,10 @@ public class menu extends javax.swing.JFrame {
                     j_dueno.setModel(modelo3);
                     DefaultComboBoxModel modelo4 = (DefaultComboBoxModel) j_list.getModel();
                     modelo4.addElement(x);
-                    j_list.setModel(modelo3);
+                    j_list.setModel(modelo4);
+                    DefaultComboBoxModel modelo5 = (DefaultComboBoxModel) j_el_persona.getModel();
+                    modelo5.addElement(x);
+                    j_el_persona.setModel(modelo5);
                 }
             } else {
                 boolean u = false;
@@ -1456,7 +1464,10 @@ public class menu extends javax.swing.JFrame {
                     j_dueno.setModel(modelo3);
                     DefaultComboBoxModel modelo4 = (DefaultComboBoxModel) j_list.getModel();
                     modelo4.addElement(x);
-                    j_list.setModel(modelo3);
+                    j_list.setModel(modelo4);
+                    DefaultComboBoxModel modelo5 = (DefaultComboBoxModel) j_el_persona.getModel();
+                    modelo5.addElement(x);
+                    j_el_persona.setModel(modelo5);
                 }
             }
         } else {
@@ -1522,7 +1533,10 @@ public class menu extends javax.swing.JFrame {
             j_dueno.setModel(modelo3);
             DefaultComboBoxModel modelo4 = (DefaultComboBoxModel) j_list.getModel();
             modelo4.addElement(x);
-            j_list.setModel(modelo3);
+            j_list.setModel(modelo4);
+            DefaultComboBoxModel modelo5 = (DefaultComboBoxModel) j_el_persona.getModel();
+            modelo5.addElement(x);
+            j_el_persona.setModel(modelo5);
         } else {
             JOptionPane.showMessageDialog(this, "No se pudo agregar");
         }
@@ -1745,29 +1759,38 @@ public class menu extends javax.swing.JFrame {
             int talla = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la talla"));
             String material_suela = JOptionPane.showInputDialog("Ingrese el material de la suela");
             int confort = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el confort"));
-            Objeto x=new zapato(talla, confort, material_suela, c, desc, marca, tamano, cal, y);
+            Objeto x = new zapato(talla, confort, material_suela, c, desc, marca, tamano, cal, y);
             objetos.add(x);
-            DefaultComboBoxModel modelo=(DefaultComboBoxModel) j_objetomod.getModel();
-                modelo.addElement(x);
-                j_objetomod.setModel(modelo);
+            DefaultComboBoxModel modelo = (DefaultComboBoxModel) j_objetomod.getModel();
+            modelo.addElement(x);
+            j_objetomod.setModel(modelo);
+            DefaultComboBoxModel modelo1 = (DefaultComboBoxModel) j_el_objeto.getModel();
+                modelo1.addElement(x);
+                j_el_objeto.setModel(modelo1);
         } else {
             if (j_tipo.getSelectedItem().equals("Ropa")) {
                 int talla = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la talla"));
                 String material = JOptionPane.showInputDialog("Ingrese el material ");
                 String pais = JOptionPane.showInputDialog("Ingrese el pais que la elabora");
-                Objeto x=new Ropa(talla, material, pais, c, desc, marca, tamano, cal, y);
+                Objeto x = new Ropa(talla, material, pais, c, desc, marca, tamano, cal, y);
                 objetos.add(x);
-                DefaultComboBoxModel modelo=(DefaultComboBoxModel) j_objetomod.getModel();
+                DefaultComboBoxModel modelo = (DefaultComboBoxModel) j_objetomod.getModel();
                 modelo.addElement(x);
                 j_objetomod.setModel(modelo);
+                DefaultComboBoxModel modelo1 = (DefaultComboBoxModel) j_el_objeto.getModel();
+                modelo1.addElement(x);
+                j_el_objeto.setModel(modelo1);
             } else {
                 String armado = JOptionPane.showInputDialog("Ingrese como se arma");
                 String casa = JOptionPane.showInputDialog("Ingrese el lugar de la casa");
-                Objeto x=new ObjetoHogar(casa, armado, null, 0, c, desc, marca, tamano, cal, y);
+                Objeto x = new ObjetoHogar(casa, armado, null, 0, c, desc, marca, tamano, cal, y);
                 objetos.add(x);
-                DefaultComboBoxModel modelo=(DefaultComboBoxModel) j_objetomod.getModel();
+                DefaultComboBoxModel modelo = (DefaultComboBoxModel) j_objetomod.getModel();
                 modelo.addElement(x);
                 j_objetomod.setModel(modelo);
+                DefaultComboBoxModel modelo1 = (DefaultComboBoxModel) j_el_objeto.getModel();
+                modelo1.addElement(x);
+                j_el_objeto.setModel(modelo1);
             }
         }
 
@@ -1783,10 +1806,10 @@ public class menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton9MouseClicked
 
     private void j_listItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_j_listItemStateChanged
-        if(evt.getStateChange()>=2){
-            Persona x=(Persona)j_list.getSelectedItem();
-            Object[] fila={x.getNombre(),x.getID(),x.getEstado_c(),x.getSexo()};
-            DefaultTableModel modelo=(DefaultTableModel)jTable1.getModel();
+        if (evt.getStateChange() >= 2) {
+            Persona x = (Persona) j_list.getSelectedItem();
+            Object[] fila = {x.getNombre(), x.getID(), x.getEstado_c(), x.getSexo()};
+            DefaultTableModel modelo = (DefaultTableModel) jTable1.getModel();
             modelo.addRow(fila);
             jTable1.setModel(modelo);
         }
@@ -1804,7 +1827,7 @@ public class menu extends javax.swing.JFrame {
             int talla = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la talla"));
             String material_suela = JOptionPane.showInputDialog("Ingrese el material de la suela");
             int confort = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el confort"));
-            zapato x=(zapato)j_objetomod.getSelectedItem();
+            zapato x = (zapato) j_objetomod.getSelectedItem();
             x.setC(c);
             x.setCalidad(cal);
             x.setConfort(confort);
@@ -1819,7 +1842,7 @@ public class menu extends javax.swing.JFrame {
                 int talla = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la talla"));
                 String material = JOptionPane.showInputDialog("Ingrese el material ");
                 String pais = JOptionPane.showInputDialog("Ingrese el pais que la elabora");
-                Ropa x=(Ropa)j_objetomod.getSelectedItem();
+                Ropa x = (Ropa) j_objetomod.getSelectedItem();
                 x.setC(c);
                 x.setCalidad(cal);
                 x.setMaterial(material);
@@ -1832,7 +1855,7 @@ public class menu extends javax.swing.JFrame {
             } else {
                 String armado = JOptionPane.showInputDialog("Ingrese como se arma");
                 String casa = JOptionPane.showInputDialog("Ingrese el lugar de la casa");
-                ObjetoHogar x=(ObjetoHogar)j_objetomod.getSelectedItem();
+                ObjetoHogar x = (ObjetoHogar) j_objetomod.getSelectedItem();
                 x.setC(c);
                 x.setCalidad(cal);
                 x.setCasa(casa);
@@ -1841,7 +1864,7 @@ public class menu extends javax.swing.JFrame {
                 x.setMarca(marca);
                 x.setArmado(armado);
                 x.setTamano(tamano);
-                
+
             }
         }
     }//GEN-LAST:event_jButton10MouseClicked
@@ -1855,14 +1878,18 @@ public class menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void j_objetomodItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_j_objetomodItemStateChanged
-        if(evt.getStateChange()>=2){
-            Objeto o=(Objeto)j_objetomod.getSelectedItem();
+        if (evt.getStateChange() >= 2) {
+            Objeto o = (Objeto) j_objetomod.getSelectedItem();
             j_mar_oba1.setText(o.getMarca());
             j_des_oba1.setText(o.getDescrip());
-            j_cal_oba1.setText(""+o.getCalidad());
-            j_tam_oba1.setText(""+o.getTamano());
+            j_cal_oba1.setText("" + o.getCalidad());
+            j_tam_oba1.setText("" + o.getTamano());
         }
     }//GEN-LAST:event_j_objetomodItemStateChanged
+
+    private void jButton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseClicked
+        //j_el_persona.remove(j_el_persona.getSelectedItem());
+    }//GEN-LAST:event_jButton7MouseClicked
 
     /**
      * @param args the command line arguments
@@ -2090,10 +2117,10 @@ public class menu extends javax.swing.JFrame {
         {'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E'},
         {'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F'},
         {'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G'},
-         {'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'},
+        {'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'},
         {'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'},
         {'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'},
-         {'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K'},
+        {'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K'},
         {'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'},
         {'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M'},
         {'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N'},
