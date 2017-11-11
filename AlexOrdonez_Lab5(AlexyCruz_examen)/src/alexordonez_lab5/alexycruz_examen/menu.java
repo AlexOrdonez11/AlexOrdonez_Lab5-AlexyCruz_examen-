@@ -212,6 +212,7 @@ public class menu extends javax.swing.JFrame {
         jPanel5.add(j_peso_famm, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 96, 84, -1));
 
         jButton3.setText("Modificar");
+        jButton3.setEnabled(false);
         jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton3MouseClicked(evt);
@@ -297,6 +298,7 @@ public class menu extends javax.swing.JFrame {
         jPanel6.add(j_ocp_perm, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 191, 87, -1));
 
         jButton4.setText("Modificar");
+        jButton4.setEnabled(false);
         jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton4MouseClicked(evt);
@@ -528,6 +530,7 @@ public class menu extends javax.swing.JFrame {
         j_rol_fama.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Madre", "Padre", "Hermano", "Hermana", "Esposo" }));
 
         jButton1.setText("Agregar");
+        jButton1.setEnabled(false);
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
@@ -689,6 +692,7 @@ public class menu extends javax.swing.JFrame {
         });
 
         jButton2.setText("Agregar");
+        jButton2.setEnabled(false);
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton2MouseClicked(evt);
@@ -1026,6 +1030,12 @@ public class menu extends javax.swing.JFrame {
                 this.dispose();
                 per_actual.setText(p.getNombre());
                 actual = p;
+                if(p.equals(kim)){
+                    jButton1.setEnabled(true);
+                    jButton2.setEnabled(true);
+                    jButton3.setEnabled(true);
+                    jButton4.setEnabled(true);
+                }
                 menu.setVisible(true);
             }
         }
@@ -1393,10 +1403,17 @@ public class menu extends javax.swing.JFrame {
                     }
                 }
             }
-
+            s=s.toUpperCase();
+            String p="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            JOptionPane.showMessageDialog(null, "palabra clave ABC");
+            for (int i = 0; i < 10; i++) {
+                
+            }
+            ((Persona)j_persona.getSelectedItem()).getMensajes().add(s);
+        }else{
+            ((Persona) j_persona.getSelectedItem()).getMensajes().add("Mensaje de: "
+                    + actual.getNombre() + "\n" + j_mensajes.getText());
         }
-        ((Persona) j_persona.getSelectedItem()).getMensajes().add("Mensaje de: "
-                + actual.getNombre() + "\n" + j_mensajes.getText());
     }//GEN-LAST:event_jButton5MouseClicked
 
     /**
