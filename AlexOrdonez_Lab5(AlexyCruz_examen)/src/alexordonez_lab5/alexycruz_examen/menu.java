@@ -1128,8 +1128,6 @@ public class menu extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Agregar", agregar);
 
-        j_el_persona.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
         jButton7.setText("Eliminar");
         jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1163,10 +1161,13 @@ public class menu extends javax.swing.JFrame {
 
         jTabbedPane4.addTab("Eliminar Persona", jPanel10);
 
-        j_el_objeto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
         jButton6.setText("Eliminar");
         jButton6.setEnabled(false);
+        jButton6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton6MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -1765,8 +1766,8 @@ public class menu extends javax.swing.JFrame {
             modelo.addElement(x);
             j_objetomod.setModel(modelo);
             DefaultComboBoxModel modelo1 = (DefaultComboBoxModel) j_el_objeto.getModel();
-                modelo1.addElement(x);
-                j_el_objeto.setModel(modelo1);
+            modelo1.addElement(x);
+            j_el_objeto.setModel(modelo1);
         } else {
             if (j_tipo.getSelectedItem().equals("Ropa")) {
                 int talla = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la talla"));
@@ -1888,8 +1889,38 @@ public class menu extends javax.swing.JFrame {
     }//GEN-LAST:event_j_objetomodItemStateChanged
 
     private void jButton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseClicked
-        //j_el_persona.remove(j_el_persona.getSelectedItem());
+        DefaultComboBoxModel modelo = (DefaultComboBoxModel) j_el_persona.getModel();
+        modelo.removeElement(j_el_persona.getSelectedItem());
+        j_el_persona.setModel(modelo);
+        personas.remove(j_el_persona.getSelectedItem());
+        modelo = (DefaultComboBoxModel) j_persona.getModel();
+        modelo.removeElement(j_el_persona.getSelectedItem());
+        j_persona.setModel(modelo);
+        modelo = (DefaultComboBoxModel) j_list.getModel();
+        modelo.removeElement(j_el_persona.getSelectedItem());
+        j_list.setModel(modelo);
+        if (j_el_persona.getSelectedItem() instanceof familiar) {
+            familiares.remove(j_el_persona.getSelectedItem());
+            modelo = (DefaultComboBoxModel) j_fam_mod.getModel();
+            modelo.removeElement(j_el_persona.getSelectedItem());
+            j_fam_mod.setModel(modelo);
+        } else {
+            empleados.remove(j_el_persona.getSelectedItem());
+            modelo = (DefaultComboBoxModel) j_per_mod.getModel();
+            modelo.removeElement(j_el_persona.getSelectedItem());
+            j_per_mod.setModel(modelo);
+        }
     }//GEN-LAST:event_jButton7MouseClicked
+
+    private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
+        DefaultComboBoxModel modelo = (DefaultComboBoxModel) j_el_objeto.getModel();
+        modelo.removeElement(j_el_objeto.getSelectedItem());
+        j_el_objeto.setModel(modelo);
+        objetos.remove(j_el_objeto.getSelectedItem());
+        modelo = (DefaultComboBoxModel) j_objetomod.getModel();
+        modelo.removeElement(j_objetomod.getSelectedItem());
+        j_objetomod.setModel(modelo);
+    }//GEN-LAST:event_jButton6MouseClicked
 
     /**
      * @param args the command line arguments
