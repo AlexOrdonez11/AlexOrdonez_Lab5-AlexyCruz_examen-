@@ -11,6 +11,7 @@ import java.util.Date;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JColorChooser;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -88,6 +89,21 @@ public class menu extends javax.swing.JFrame {
         j_per_mod = new javax.swing.JComboBox<>();
         jLabel50 = new javax.swing.JLabel();
         jPanel12 = new javax.swing.JPanel();
+        j_objetomod = new javax.swing.JComboBox<>();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        j_dueno1 = new javax.swing.JComboBox<>();
+        j_mar_oba1 = new javax.swing.JTextField();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        j_des_oba1 = new javax.swing.JTextArea();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        j_tam_oba1 = new javax.swing.JTextField();
+        jButton10 = new javax.swing.JButton();
+        j_cal_oba1 = new javax.swing.JTextField();
+        j_tipo1 = new javax.swing.JComboBox<>();
+        jLabel56 = new javax.swing.JLabel();
+        jButton11 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         j_persona = new javax.swing.JComboBox<>();
         jLabel52 = new javax.swing.JLabel();
@@ -387,15 +403,124 @@ public class menu extends javax.swing.JFrame {
 
         jTabbedPane2.addTab("personal", jPanel6);
 
+        j_objetomod.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                j_objetomodItemStateChanged(evt);
+            }
+        });
+
+        jLabel32.setText("Marca");
+
+        jLabel43.setText("Descripcion");
+
+        j_des_oba1.setColumns(20);
+        j_des_oba1.setRows(5);
+        jScrollPane5.setViewportView(j_des_oba1);
+
+        jLabel54.setText("calidad");
+
+        jLabel55.setText("tamano");
+
+        jButton10.setText("Modificar");
+        jButton10.setEnabled(false);
+        jButton10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton10MouseClicked(evt);
+            }
+        });
+
+        j_tipo1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "zapato", "Ropa", "Hogar" }));
+
+        jLabel56.setText("Color");
+
+        jButton11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton11MouseClicked(evt);
+            }
+        });
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
         jPanel12Layout.setHorizontalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 554, Short.MAX_VALUE)
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addGap(44, 44, 44)
+                .addComponent(j_objetomod, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(421, Short.MAX_VALUE))
+            .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel12Layout.createSequentialGroup()
+                    .addGap(61, 61, 61)
+                    .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel12Layout.createSequentialGroup()
+                            .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel32)
+                                .addComponent(jLabel43)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
+                                    .addComponent(jLabel56)
+                                    .addGap(25, 25, 25)))
+                            .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(j_cal_oba1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(j_mar_oba1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel54))
+                    .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel12Layout.createSequentialGroup()
+                            .addGap(18, 18, 18)
+                            .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(j_dueno1, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanel12Layout.createSequentialGroup()
+                                    .addComponent(jLabel55)
+                                    .addGap(33, 33, 33)
+                                    .addComponent(j_tam_oba1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(j_tipo1, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGap(61, 61, 61)))
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 359, Short.MAX_VALUE)
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(j_objetomod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(330, Short.MAX_VALUE))
+            .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel12Layout.createSequentialGroup()
+                    .addGap(54, 54, 54)
+                    .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel32)
+                        .addComponent(j_dueno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(j_mar_oba1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel12Layout.createSequentialGroup()
+                            .addGap(27, 27, 27)
+                            .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel43)
+                                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel12Layout.createSequentialGroup()
+                            .addGap(40, 40, 40)
+                            .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel55)
+                                .addComponent(j_tam_oba1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGap(18, 18, 18)
+                            .addComponent(j_tipo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGap(13, 13, 13)
+                    .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel54)
+                        .addComponent(j_cal_oba1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(26, 26, 26)
+                    .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel56))
+                    .addContainerGap(55, Short.MAX_VALUE)))
         );
 
         jTabbedPane2.addTab("Objeto", jPanel12);
@@ -496,14 +621,18 @@ public class menu extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Mensajeria", jPanel4);
 
-        j_list.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        j_list.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                j_listItemStateChanged(evt);
+            }
+        });
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Nombre", "ID", "Trabajo", "Sexo"
+                "Nombre", "ID", "Estado Civil", "Sexo"
             }
         ) {
             Class[] types = new Class [] {
@@ -877,8 +1006,6 @@ public class menu extends javax.swing.JFrame {
 
         jLabel18.setText("Descripcion");
 
-        j_dueno.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
         j_des_oba.setColumns(20);
         j_des_oba.setRows(5);
         jScrollPane4.setViewportView(j_des_oba);
@@ -895,7 +1022,7 @@ public class menu extends javax.swing.JFrame {
             }
         });
 
-        j_tipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        j_tipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "zapato", "Ropa", "Hogar" }));
 
         jLabel19.setText("Color");
 
@@ -1034,6 +1161,7 @@ public class menu extends javax.swing.JFrame {
         j_el_objeto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jButton6.setText("Eliminar");
+        jButton6.setEnabled(false);
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -1096,9 +1224,9 @@ public class menu extends javax.swing.JFrame {
         menuLayout.setVerticalGroup(
             menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, menuLayout.createSequentialGroup()
-                .addComponent(per_actual, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                .addComponent(per_actual, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 445, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 461, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -1186,7 +1314,7 @@ public class menu extends javax.swing.JFrame {
                 this.dispose();
                 per_actual.setText(p.getNombre());
                 actual = p;
-                if(p.equals(kim)){
+                if (p.equals(kim)) {
                     jButton1.setEnabled(true);
                     jButton2.setEnabled(true);
                     jButton3.setEnabled(true);
@@ -1198,7 +1326,7 @@ public class menu extends javax.swing.JFrame {
         }
         String h = "";
         for (String t : actual.getMensajes()) {
-            h += t+"\n";
+            h += t + "\n";
         }
         j_recibidos.setText(h);
     }//GEN-LAST:event_b_ingresarMouseClicked
@@ -1296,6 +1424,12 @@ public class menu extends javax.swing.JFrame {
                     DefaultComboBoxModel modelo2 = (DefaultComboBoxModel) j_persona.getModel();
                     modelo2.addElement(x);
                     j_persona.setModel(modelo2);
+                    DefaultComboBoxModel modelo3 = (DefaultComboBoxModel) j_dueno.getModel();
+                    modelo3.addElement(x);
+                    j_dueno.setModel(modelo3);
+                    DefaultComboBoxModel modelo4 = (DefaultComboBoxModel) j_list.getModel();
+                    modelo4.addElement(x);
+                    j_list.setModel(modelo3);
                 }
             } else {
                 boolean u = false;
@@ -1317,6 +1451,12 @@ public class menu extends javax.swing.JFrame {
                     DefaultComboBoxModel modelo2 = (DefaultComboBoxModel) j_persona.getModel();
                     modelo2.addElement(x);
                     j_persona.setModel(modelo2);
+                    DefaultComboBoxModel modelo3 = (DefaultComboBoxModel) j_dueno.getModel();
+                    modelo3.addElement(x);
+                    j_dueno.setModel(modelo3);
+                    DefaultComboBoxModel modelo4 = (DefaultComboBoxModel) j_list.getModel();
+                    modelo4.addElement(x);
+                    j_list.setModel(modelo3);
                 }
             }
         } else {
@@ -1377,6 +1517,12 @@ public class menu extends javax.swing.JFrame {
             DefaultComboBoxModel modelo2 = (DefaultComboBoxModel) j_persona.getModel();
             modelo2.addElement(x);
             j_persona.setModel(modelo2);
+            DefaultComboBoxModel modelo3 = (DefaultComboBoxModel) j_dueno.getModel();
+            modelo3.addElement(x);
+            j_dueno.setModel(modelo3);
+            DefaultComboBoxModel modelo4 = (DefaultComboBoxModel) j_list.getModel();
+            modelo4.addElement(x);
+            j_list.setModel(modelo3);
         } else {
             JOptionPane.showMessageDialog(this, "No se pudo agregar");
         }
@@ -1538,70 +1684,94 @@ public class menu extends javax.swing.JFrame {
                 h += e;
             }
             JOptionPane.showMessageDialog(this, "palabra ABC");
-            String s="";
-            for (int i = 0; i <h.length(); i++) {
+            String s = "";
+            for (int i = 0; i < h.length(); i++) {
                 for (int j = 0; j < 3; j++) {
-                    if(j*i<h.length()){
-                        s+=h.charAt(j*i);
+                    if (j * i < h.length()) {
+                        s += h.charAt(j * i);
                     }
                 }
             }
-            for (int i = 0; i <h.length(); i++) {
+            for (int i = 0; i < h.length(); i++) {
                 for (int j = 0; j < 3; j++) {
-                    if(j*i+1<h.length()){
-                        s+=h.charAt(j*i+1);
+                    if (j * i + 1 < h.length()) {
+                        s += h.charAt(j * i + 1);
                     }
                 }
             }
-            for (int i = 0; i <h.length(); i++) {
+            for (int i = 0; i < h.length(); i++) {
                 for (int j = 0; j < 3; j++) {
-                    if(j*i+2<h.length()){
-                        s+=h.charAt(j*i+2);
+                    if (j * i + 2 < h.length()) {
+                        s += h.charAt(j * i + 2);
                     }
                 }
             }
-            s=s.toUpperCase();
-            char p[][]=matriz();
+            s = s.toUpperCase();
+            char p[][] = matriz();
             JOptionPane.showMessageDialog(null, "palabra clave ABC");
             int fil;
             int col;
-            String l="";
-            String o="ABC";
-            int r=0;
+            String l = "";
+            String o = "ABC";
+            int r = 0;
             for (int j = 0; j < s.length(); j++) {
                 r++;
                 for (int i = 0; i < 26; i++) {
-                    if(s.charAt(j)==p[0][i]){
-                        col=i;
-                        l+=p[r][i];
+                    if (s.charAt(j) == p[0][i]) {
+                        col = i;
+                        l += p[r][i];
                     }
                 }
-                if(r==3){
-                    r=0;
+                if (r == 3) {
+                    r = 0;
                 }
             }
-            ((Persona)j_persona.getSelectedItem()).getMensajes().add(l);
-        }else{
+            ((Persona) j_persona.getSelectedItem()).getMensajes().add(l);
+        } else {
             ((Persona) j_persona.getSelectedItem()).getMensajes().add("Mensaje de: "
                     + actual.getNombre() + "\n" + j_mensajes.getText());
         }
     }//GEN-LAST:event_jButton5MouseClicked
 
     private void jButton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseClicked
-        String marca=j_mar_oba.getText();
-        String desc=j_des_oba.getText();
-        int tamano=Integer.parseInt(j_tam_oba.getText());
-        int cal=Integer.parseInt(j_cal_oba.getText());
-        familiar y=((familiar)j_dueno.getSelectedItem());
-        Color c=jButton9.getBackground();
-        String o=(String)j_tipo.getSelectedItem();
-        if(j_tipo.getSelectedItem().equals("zapato")){
-            int talla=Integer.parseInt(JOptionPane.showInputDialog("Ingrese la talla"));
-            String material_suela=JOptionPane.showInputDialog("Ingrese el material de la suela");
-            int confort=Integer.parseInt(JOptionPane.showInputDialog("Ingrese el confort"));
-            objetos.add(new zapato( talla, confort, material_suela, c, desc, marca, tamano, cal,  y));
+        String marca = j_mar_oba.getText();
+        String desc = j_des_oba.getText();
+        int tamano = Integer.parseInt(j_tam_oba.getText());
+        int cal = Integer.parseInt(j_cal_oba.getText());
+        familiar y = ((familiar) j_dueno.getSelectedItem());
+        Color c = jButton9.getBackground();
+        String o = (String) j_tipo.getSelectedItem();
+        if (j_tipo.getSelectedItem().equals("zapato")) {
+            int talla = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la talla"));
+            String material_suela = JOptionPane.showInputDialog("Ingrese el material de la suela");
+            int confort = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el confort"));
+            Objeto x=new zapato(talla, confort, material_suela, c, desc, marca, tamano, cal, y);
+            objetos.add(x);
+            DefaultComboBoxModel modelo=(DefaultComboBoxModel) j_objetomod.getModel();
+                modelo.addElement(x);
+                j_objetomod.setModel(modelo);
+        } else {
+            if (j_tipo.getSelectedItem().equals("Ropa")) {
+                int talla = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la talla"));
+                String material = JOptionPane.showInputDialog("Ingrese el material ");
+                String pais = JOptionPane.showInputDialog("Ingrese el pais que la elabora");
+                Objeto x=new Ropa(talla, material, pais, c, desc, marca, tamano, cal, y);
+                objetos.add(x);
+                DefaultComboBoxModel modelo=(DefaultComboBoxModel) j_objetomod.getModel();
+                modelo.addElement(x);
+                j_objetomod.setModel(modelo);
+            } else {
+                String armado = JOptionPane.showInputDialog("Ingrese como se arma");
+                String casa = JOptionPane.showInputDialog("Ingrese el lugar de la casa");
+                Objeto x=new ObjetoHogar(casa, armado, null, 0, c, desc, marca, tamano, cal, y);
+                objetos.add(x);
+                DefaultComboBoxModel modelo=(DefaultComboBoxModel) j_objetomod.getModel();
+                modelo.addElement(x);
+                j_objetomod.setModel(modelo);
+            }
         }
-        
+
+
     }//GEN-LAST:event_jButton8MouseClicked
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
@@ -1611,6 +1781,88 @@ public class menu extends javax.swing.JFrame {
     private void jButton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MouseClicked
         jButton9.setBackground(JColorChooser.showDialog(this, "Seleccione un color", Color.yellow));
     }//GEN-LAST:event_jButton9MouseClicked
+
+    private void j_listItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_j_listItemStateChanged
+        if(evt.getStateChange()>=2){
+            Persona x=(Persona)j_list.getSelectedItem();
+            Object[] fila={x.getNombre(),x.getID(),x.getEstado_c(),x.getSexo()};
+            DefaultTableModel modelo=(DefaultTableModel)jTable1.getModel();
+            modelo.addRow(fila);
+            jTable1.setModel(modelo);
+        }
+    }//GEN-LAST:event_j_listItemStateChanged
+
+    private void jButton10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton10MouseClicked
+        String marca = j_mar_oba1.getText();
+        String desc = j_des_oba1.getText();
+        int tamano = Integer.parseInt(j_tam_oba1.getText());
+        int cal = Integer.parseInt(j_cal_oba1.getText());
+        familiar y = ((familiar) j_dueno1.getSelectedItem());
+        Color c = jButton9.getBackground();
+        String o = (String) j_tipo1.getSelectedItem();
+        if (j_tipo1.getSelectedItem().equals("zapato")) {
+            int talla = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la talla"));
+            String material_suela = JOptionPane.showInputDialog("Ingrese el material de la suela");
+            int confort = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el confort"));
+            zapato x=(zapato)j_objetomod.getSelectedItem();
+            x.setC(c);
+            x.setCalidad(cal);
+            x.setConfort(confort);
+            x.setDescrip(desc);
+            x.setDueno(y);
+            x.setMarca(marca);
+            x.setSuela(material_suela);
+            x.setTalla(talla);
+            x.setTamano(tamano);
+        } else {
+            if (j_tipo1.getSelectedItem().equals("Ropa")) {
+                int talla = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la talla"));
+                String material = JOptionPane.showInputDialog("Ingrese el material ");
+                String pais = JOptionPane.showInputDialog("Ingrese el pais que la elabora");
+                Ropa x=(Ropa)j_objetomod.getSelectedItem();
+                x.setC(c);
+                x.setCalidad(cal);
+                x.setMaterial(material);
+                x.setDescrip(desc);
+                x.setDueno(y);
+                x.setMarca(marca);
+                x.setP_elabora(pais);
+                x.setTalla(talla);
+                x.setTamano(tamano);
+            } else {
+                String armado = JOptionPane.showInputDialog("Ingrese como se arma");
+                String casa = JOptionPane.showInputDialog("Ingrese el lugar de la casa");
+                ObjetoHogar x=(ObjetoHogar)j_objetomod.getSelectedItem();
+                x.setC(c);
+                x.setCalidad(cal);
+                x.setCasa(casa);
+                x.setDescrip(desc);
+                x.setDueno(y);
+                x.setMarca(marca);
+                x.setArmado(armado);
+                x.setTamano(tamano);
+                
+            }
+        }
+    }//GEN-LAST:event_jButton10MouseClicked
+
+    private void jButton11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton11MouseClicked
+        jButton9.setBackground(JColorChooser.showDialog(this, "Seleccione un color", Color.yellow));
+    }//GEN-LAST:event_jButton11MouseClicked
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void j_objetomodItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_j_objetomodItemStateChanged
+        if(evt.getStateChange()>=2){
+            Objeto o=(Objeto)j_objetomod.getSelectedItem();
+            j_mar_oba1.setText(o.getMarca());
+            j_des_oba1.setText(o.getDescrip());
+            j_cal_oba1.setText(""+o.getCalidad());
+            j_tam_oba1.setText(""+o.getTamano());
+        }
+    }//GEN-LAST:event_j_objetomodItemStateChanged
 
     /**
      * @param args the command line arguments
@@ -1653,6 +1905,8 @@ public class menu extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -1686,6 +1940,7 @@ public class menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
@@ -1697,6 +1952,7 @@ public class menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
@@ -1708,6 +1964,9 @@ public class menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -1728,6 +1987,7 @@ public class menu extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JTabbedPane jTabbedPane3;
@@ -1736,12 +1996,15 @@ public class menu extends javax.swing.JFrame {
     private javax.swing.JTextField j_alt_fama;
     private javax.swing.JTextField j_alt_famm;
     private javax.swing.JTextField j_cal_oba;
+    private javax.swing.JTextField j_cal_oba1;
     private javax.swing.JPasswordField j_contra_fama;
     private javax.swing.JTextField j_contra_famm;
     private javax.swing.JTextField j_contra_pera;
     private javax.swing.JTextField j_contra_perm;
     private javax.swing.JTextArea j_des_oba;
+    private javax.swing.JTextArea j_des_oba1;
     private javax.swing.JComboBox<String> j_dueno;
+    private javax.swing.JComboBox<String> j_dueno1;
     private javax.swing.JTextField j_eda_fama;
     private javax.swing.JTextField j_eda_famm;
     private javax.swing.JTextField j_eda_pera;
@@ -1761,11 +2024,13 @@ public class menu extends javax.swing.JFrame {
     private javax.swing.JTextField j_id_perm;
     private javax.swing.JComboBox<String> j_list;
     private javax.swing.JTextField j_mar_oba;
+    private javax.swing.JTextField j_mar_oba1;
     private javax.swing.JTextArea j_mensajes;
     private javax.swing.JTextField j_nom_fama;
     private javax.swing.JTextField j_nom_famm;
     private javax.swing.JTextField j_nom_pera;
     private javax.swing.JTextField j_nom_perm;
+    private javax.swing.JComboBox<String> j_objetomod;
     private javax.swing.JTextField j_ocp_pera;
     private javax.swing.JTextField j_ocp_perm;
     private javax.swing.JComboBox<String> j_per_mod;
@@ -1778,7 +2043,9 @@ public class menu extends javax.swing.JFrame {
     private javax.swing.JTextField j_sue_pera;
     private javax.swing.JTextField j_sue_perm;
     private javax.swing.JTextField j_tam_oba;
+    private javax.swing.JTextField j_tam_oba1;
     private javax.swing.JComboBox<String> j_tipo;
+    private javax.swing.JComboBox<String> j_tipo1;
     private javax.swing.JTextField j_trab_fama;
     private javax.swing.JTextField j_trab_famm;
     private javax.swing.JPasswordField jp_pass;
@@ -1801,7 +2068,7 @@ public class menu extends javax.swing.JFrame {
     ArrayList<Persona> personas = new ArrayList();
     ArrayList<familiar> familiares = new ArrayList();
     ArrayList<personal> empleados = new ArrayList();
-    ArrayList<Objeto> objetos=new ArrayList();
+    ArrayList<Objeto> objetos = new ArrayList();
     int flag;
 
     public boolean id(int g) {
@@ -1813,33 +2080,34 @@ public class menu extends javax.swing.JFrame {
         }
         return l;
     }
-    public char[][] matriz(){
-        char [][]h={{'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'},
-                    {'B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','A'},
-                    {'C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','A','B'},
-                    {'D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','A','B','C'},
-                    {'E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','A','B','C','D'},
-                    {'F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','A','B','C','D','E'},
-                    {'G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','A','B','C','D','E','F'},
-                    {'H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','A','B','C','D','E','F','G'}
-            ,       {'I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','A','B','C','D','E','F','G','H'},
-                    {'J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','A','B','C','D','E','F','G','H','I'},
-                    {'K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','A','B','C','D','E','F','G','H','I','J'}
-            ,       {'L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','A','B','C','D','E','F','G','H','I','J','K'},
-                    {'M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','A','B','C','D','E','F','G','H','I','J','K','L'},
-                    {'N','O','P','Q','R','S','T','U','V','W','X','Y','Z','A','B','C','D','E','F','G','H','I','J','K','L','M'},
-                    {'O','P','Q','R','S','T','U','V','W','X','Y','Z','A','B','C','D','E','F','G','H','I','J','K','L','M','N'},
-                    {'P','Q','R','S','T','U','V','W','X','Y','Z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O'},
-                    {'Q','R','S','T','U','V','W','X','Y','Z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P'},
-                    {'R','S','T','U','V','W','X','Y','Z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q'},
-                    {'S','T','U','V','W','X','Y','Z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R'},
-                    {'T','U','V','W','X','Y','Z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S'},
-                    {'U','V','W','X','Y','Z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T'},
-                    {'V','W','X','Y','Z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U'},
-                    {'W','X','Y','Z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V'},
-                    {'X','Y','Z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W'},
-                    {'Y','Z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X'},
-                    {'Z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y'}};
+
+    public char[][] matriz() {
+        char[][] h = {{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'},
+        {'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A'},
+        {'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B'},
+        {'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C'},
+        {'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D'},
+        {'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E'},
+        {'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F'},
+        {'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G'},
+         {'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'},
+        {'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'},
+        {'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'},
+         {'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K'},
+        {'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'},
+        {'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M'},
+        {'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N'},
+        {'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'},
+        {'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P'},
+        {'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q'},
+        {'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R'},
+        {'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S'},
+        {'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T'},
+        {'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U'},
+        {'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V'},
+        {'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W'},
+        {'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X'},
+        {'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y'}};
         return h;
     }
 }
